@@ -1,0 +1,22 @@
+<!--With Bootstrap3-->
+<!--<div class="row">
+    <ul class="album">
+        <h2>Album Detail</h2>
+        <div *ngIf="!currentAlbum">
+            <li class="col-sm-12">Please select an album</li>
+            <li class="col-sm-12">No album selected</li>
+        </div>
+
+        <li class="col-sm-12">{{currentAlbum?.title}}</li>
+        <li class="col-sm-12">{{currentAlbum?.detail}}</li>
+    </ul>
+</div>-->
+
+<!--With Angular Material-->
+<div *ngIf="!currentAlbum">
+    <md-card-title>Please select an album</md-card-title>
+    <md-card-subtitle>No album selected</md-card-subtitle>
+</div>
+<md-card-title>{{currentAlbum?.title}}</md-card-title>
+<md-card-subtitle>{{currentAlbum?.detail}}</md-card-subtitle>
+<!--Aggiungere info + cover-->

@@ -1,0 +1,37 @@
+<!--
+<div class="container">
+    <header class="row">
+        <nav class='navbar navbar-inverse'>
+            <div class='container-fluid'>
+                <a class='navbar-brand'>{{pageTitle}}</a>
+                <ul class='nav navbar-nav'>
+                    <li><a [routerLink]="['/welcome']">Home</a></li>
+                    <li><a [routerLink]="['/albums', {outlets: {'list': ['albumsList'], 'detail': ['none']}}]">Product List</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#" (click)="quit()">Exit</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <router-outlet></router-outlet>
+
+</div>-->
+<md-toolbar color="primary" class="md-elevation-z2">
+    {{pageTitle}}
+    <span class="app-toolbar-filler"></span>
+    <button routerLink="welcome" md-button>Home</button>
+    <button md-button
+            [routerLink]="['/albums', {outlets: {'list': ['albumsList'], 'detail': ['none']}}]">
+        Albums
+    </button>
+    <button md-button (click)="quit()">Exit</button>
+</md-toolbar>
+
+
+
+
+<div class="app-content">
+    <router-outlet></router-outlet>
+</div>

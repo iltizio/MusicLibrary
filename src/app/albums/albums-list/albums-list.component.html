@@ -1,0 +1,22 @@
+<!--With Bootstrap3-->
+<!--<div class="row">
+    <ul class="album">
+        <h2>Albums</h2>
+        <li class="col-sm-4"
+            *ngFor="let album of albums"
+            (click)="showDetail(album.id)">
+            <img [src]="album.coverImgSrc" class="img-responsive"/>
+        </li>
+    </ul>
+</div>-->
+
+<!--With Angular Material-->
+<md-card-title>Albums</md-card-title>
+<md-grid-list cols="3" gutterSize="4px">
+    <md-grid-tile *ngFor="let album of albums"
+                  [style.background-image]="'url(' + album.coverImgSrc + ')'"
+                  (click)="showDetail(album.id)">
+
+    </md-grid-tile>
+</md-grid-list>
+<!--Gestire come Last inserted ordinati per id decrescente(all'inserimento del nuovo si aggiorna con l'ultimo aggiunto)-->

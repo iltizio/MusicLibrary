@@ -1,0 +1,48 @@
+<!--With Bootstrap3-->
+<!--<div class="panel panel-primary">
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <img src="./app/assets/images/logo.jpg"
+                 class="img-responsive center-block"
+                 style="max-height:300px;padding-bottom:50px"/>
+        </div>
+        <div class="row">
+            <div class="text-center">Developed by:</div>
+            <h3 class="text-center">Tizio</h3>
+
+
+        </div>
+    </div>
+</div>-->
+<!--With Angular Material-->
+<div class="card-wrapper">
+    <md-card>
+        <md-card-header>
+            <md-card-title>
+                {{pageTitle}}
+            </md-card-title>
+            <md-card-subtitle>
+                Simple Catalog for your Music
+            </md-card-subtitle>
+        </md-card-header>
+        <img md-card-image
+             src="./app/assets/images/logo.jpg" />
+        <md-card-content>
+            <md-card-title>
+                Developed by
+            </md-card-title>
+            <md-card-subtitle>
+                Tizio
+            </md-card-subtitle>
+            <!--<md-card-actions>
+                <button md-raised-button class="md-primary"
+                        [routerLink]="['/albums', {outlets: {'list': ['albumsList'], 'detail': ['none']}}]">
+                    Albums
+                </button>
+            </md-card-actions>-->
+        </md-card-content>
+    </md-card>
+</div>

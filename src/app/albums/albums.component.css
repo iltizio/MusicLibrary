@@ -1,0 +1,15 @@
+/*With Bootstrap3
+    .gutter-50{
+    padding-left: 50px;
+}*/
+
+/*With Angular Material*/
+.columns {
+  display: flex;
+  flex-direction: row;
+}
+
+md-card {
+  flex: 1 1 50%;
+  width: 50%;
+}

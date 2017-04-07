@@ -1,0 +1,54 @@
+{
+  "name": "music-library",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && electron dist",
+    "package": "npm run build && gulp electron:package",
+    "postinstall": "concurrently \"bower install\" \"typings install\""
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.8",
+    "@angular/compiler": "^2.4.8",
+    "@angular/core": "^2.4.8",
+    "@angular/forms": "~2.4.8",
+    "@angular/http": "^2.4.8",
+    "@angular/material": "^2.0.0-beta.2",
+    "@angular/platform-browser": "^2.4.8",
+    "@angular/platform-browser-dynamic": "^2.4.8",
+    "@angular/router": "^3.4.8",
+    "@angular/upgrade": "^2.4.8",
+    "angular2-in-memory-web-api": "0.0.21",
+    "bootstrap": "^3.3.7",
+    "core-js": "^2.4.1",
+    "hammerjs": "^2.0.8",
+    "jasmine": "^2.5.3",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "5.2.0",
+    "systemjs": "^0.20.9",
+    "zone.js": "^0.7.7"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "concurrently": "^3.3.0",
+    "del": "^2.2.2",
+    "electron": "^1.4.15",
+    "gulp": "^3.9.1",
+    "gulp-atom-electron": "^1.10.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-shell": "^0.6.1",
+    "gulp-symdest": "^1.1.0",
+    "run-sequence": "^1.2.2",
+    "typescript": "^2.2.1",
+    "typings": "^2.1.0"
+  },
+  "keywords": [
+    "Angular",
+    "Angular2",
+    "typescript"
+  ],
+  "author": "Tizio",
+  "license": "None",
+  "description": "A sample application for managing music albums"
+}

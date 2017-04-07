@@ -1,0 +1,13 @@
+/* With Bootstrap3
+li {
+    font-size: large;
+}
+
+div.panel-heading {
+    font-size: x-large;
+}*/
+
+/*With Angular Material*/
+.app-toolbar-filler {
+    flex: 1 1 auto;
+}
