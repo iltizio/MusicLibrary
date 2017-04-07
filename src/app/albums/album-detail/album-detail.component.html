@@ -18,5 +18,6 @@
     <md-card-subtitle>No album selected</md-card-subtitle>
 </div>
 <md-card-title>{{currentAlbum?.title}}</md-card-title>
+<img *ngIf="currentAlbum" md-card-image src="{{currentAlbum.coverImgSrc}}">
 <md-card-subtitle>{{currentAlbum?.detail}}</md-card-subtitle>
 <!--Aggiungere info + cover-->
